@@ -1,0 +1,285 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Architects Daughter', cursive;
+  scroll-behavior: smooth;
+}
+
+.navbar-brand {
+  font-family: 'Pacifico', cursive;
+}
+
+#landingpage {
+  padding-top: 50px;
+  font-family: 'Fredoka One', cursive;
+  scroll-margin-top: 20px;
+  background-color: #b4b3b3;
+  height: 100vh;
+  background-image: url("coverpic.jpg");
+  background-size: cover;
+}
+
+#landingpage .title {
+  position: absolute;
+  top: 50%;
+}
+
+#landingpage .title h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: red;
+  border: 5px solid blackz;
+}
+
+#landingpage .title h4 {
+  color: blue;
+  font-size: 25px;
+}
+
+#landingpage .title button {
+  padding: 10px;
+}
+
+#about {
+  padding-top: 80px;
+  background-color: #b4b3b3;
+  height: 100vh;
+  position: relative;
+}
+
+#about .media {
+  position: absolute;
+  top: 50%;
+  width: 80%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#about .media .media-body {
+  padding: 10px;
+  color: blue;
+}
+
+#about .objective {
+  background-color: white;
+  padding: 10px;
+  border-right: 5px solid blue;
+  border-radius: 50px 0 0 50px;
+  color: green;
+}
+
+#about blockquote {
+  border-left: 5px solid blue;
+  padding: 10px;
+  position: absolute;
+  bottom: 50px;
+  color: green;
+  background-color: white;
+  border-radius: 0 50px 50px 0;
+}
+
+#about blockquote strong {
+  color: red;
+}
+
+#expandedu {
+  background-color: #b4b3b3;
+  height: 100vh;
+  padding: 40px;
+}
+
+#expandedu .edu {
+  background-color: white;
+  color: red;
+  border-radius: 50px 0 0 50px;
+  padding: 10px;
+  position: relative;
+  height: 100px;
+  margin: 10px;
+  border-right: 10px solid darkcyan;
+}
+
+#expandedu .edu .course {
+  position: relative;
+  background-color: darkcyan;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+#expandedu .edu .course .c-name {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
+
+#expandedu .edu .institute img, #expandedu .edu .period img, #expandedu .edu .result img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 2px;
+}
+
+#expandedu .exp {
+  background-color: white;
+  color: red;
+  border-radius: 0 50px 50px 0;
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  border-left: 10px solid darkcyan;
+  height: 100px;
+}
+
+#expandedu .exp .course {
+  position: relative;
+  background-color: darkcyan;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+#expandedu .exp .course .c-name {
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
+
+#expandedu .exp .organization, #expandedu .exp .period, #expandedu .exp .techused {
+  vertical-align: middle;
+}
+
+#expandedu .exp .organization img, #expandedu .exp .period img, #expandedu .exp .techused img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 2px;
+}
+
+#expandedu .exp .organization span, #expandedu .exp .period span, #expandedu .exp .techused span {
+  padding: 5px;
+  font-weight: bold;
+  color: green;
+}
+
+#expandedu .exp .designation {
+  background-color: darkkhaki;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#more {
+  background-color: #b4b3b3;
+  height: 100vh;
+  padding-top: 70px;
+}
+
+#more .card {
+  width: 230px;
+  height: 230px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  margin: 10px;
+}
+
+#more .card-body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#more .card:hover .card-body {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+#more .card:hover .front {
+  display: none;
+}
+
+#more .front, #more .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+#more .front {
+  background-color: #bbb;
+  color: black;
+}
+
+#more .back {
+  background-color: #2980b9;
+  color: white;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+#contactme {
+  background-color: #b4b3b3;
+  height: 100vh;
+  padding-top: 80px;
+  position: relative;
+}
+
+#contactme .col-md-6 form, #contactme .col-md-6 iframe {
+  position: relative;
+  margin-top: auto;
+  top: 80%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#contactme footer {
+  height: 50px;
+  padding: 10px;
+  position: fixed;
+}
+
+#contactme footer .socialmedia img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+#contactme footer button {
+  position: absolute;
+  bottom: 0px;
+  right: 5px;
+  vertical-align: super;
+}
+
+#contactme footer button img {
+  width: 40px;
+  height: 40px;
+}
+
+#contactme footer .copyright {
+  margin: 8px auto auto 50px;
+}
+/*# sourceMappingURL=mssharma.css.map */
